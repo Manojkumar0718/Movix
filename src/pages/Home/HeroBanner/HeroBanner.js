@@ -44,8 +44,9 @@ const HeroBanner = () => {
               onKeyUp={SearchQueryHandler}
               type='text'
               placeholder='Search for a movie or tv show...'
+              style={{paddingLeft : "15px"}}
             />
-            <button>Search</button>
+            <button onClick={() =>navigate(`/search/${query}`)}>Search</button>
           </div>
         </div>
       </ContentWrapper>
